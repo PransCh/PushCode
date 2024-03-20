@@ -1,9 +1,9 @@
 # UpCode
-A software for uploading all your accepted solutions from CodeChef, CodeForces, and Atcoder to Github with no hassles, and fully automated using Python.
+A software for uploading all your accepted solutions from CodeForces, and Atcoder, CodeChef(Currently under Beta testing) to Github with no hassles, and fully automated using Python (Selenium and Chrome drivers).
 
 ## How to use:
 * Generate an API key from https://github.com/settings/tokens. Make sure the repo section is checked.
-* Download the project and extract the zip file. Navigate to the extracted folder and run the following command in terminal:
+* Run the following command in terminal:
 
   ```
   pip install -r requirements.txt
