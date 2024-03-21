@@ -2,37 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scraper Uploader</title>
+    <title>UpCode</title>
 </head>
 <body>
-    <h1>Scraper Uploader</h1>
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            <ul>
-                {% for message in messages %}
-                                        <li class="{% if 'error' in message %}error{% elif 'success' in message %}success{% else %}default{% endif %}">{{ message }}</li>
-                {% endfor %}
-            </ul>
-        {% endif %}
-    {% endwith %}
-    <form action="{{ url_for('index') }}" method="post">
+    <h1>UpCode</h1>
+    <form method="post">
         <label for="codeforces_username">Codeforces Username:</label>
-        <input type="text" id="codeforces_username" name="codeforces_username"><br><br>
+        <input type="text" id="codeforces_username" name="codeforces_username"><br>
 
-        <label for="codechef_username">CodeChef Username:</label>
-        <input type="text" id="codechef_username" name="codechef_username"><br><br>
+        <label for="codechef_username">Codechef Username:</label>
+        <input type="text" id="codechef_username" name="codechef_username"><br>
 
-        <label for="atcoder_username">AtCoder Username:</label>
-        <input type="text" id="atcoder_username" name="atcoder_username"><br><br>
+        <label for="atcoder_username">Atcoder Username:</label>
+        <input type="text" id="atcoder_username" name="atcoder_username"><br>
 
         <label for="access_token">GitHub Access Token:</label>
-        <input type="text" id="access_token" name="access_token"><br><br>
+        <input type="text" id="access_token" name="access_token"><br>
 
         <label for="repo_name">Repository Name:</label>
-        <input type="text" id="repo_name" name="repo_name" value="CP-Solutions"><br><br>
+        <input type="text" id="repo_name" name="repo_name"><br>
 
-        <input type="submit" value="Run Scraper">
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
